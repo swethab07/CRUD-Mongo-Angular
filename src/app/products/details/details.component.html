@@ -1,0 +1,28 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		Product Detail Page
+	</div>
+	<div class="panel-body" *ngFor=" let product of products ">
+		<table class="table">
+			<thead>Product Details</thead>
+			<tbody>
+				<tr>
+					<td>
+						<img [src]="product.imageUrl" style="width: 50px" [title]="product.description">
+					</td>
+					<td>{{product.productId}}</td>
+					<td>{{product.productName}}</td>
+					<td>{{product.productCode}}</td>
+					<td>{{product.releaseDate}}</td>
+					<td>{{product.description}}</td>
+					<td>{{product.price}}</td>
+					<td>{{product.starRating}}</td>
+				</tr>
+				<button class="btn btn-success" (click)="gotoproducts()">Go To Products</button>
+		</tbody>
+	</table>
+	</div>
+	
+		
+	
+</div>
